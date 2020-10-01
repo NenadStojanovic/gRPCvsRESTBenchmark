@@ -12,7 +12,7 @@ namespace RESTvsGRPC
     [HtmlExporter]
     public class Benchmark
     {
-        [Params(100, 200)]
+        [Params(100,200)]
         public int IterationCount;
 
         readonly RESTClient restClient = new RESTClient();
@@ -87,11 +87,11 @@ namespace RESTvsGRPC
 		//{
 		//	for (int i = 0; i < IterationCount; i++)
 		//	{
-		//		for (int j= 0; j < 100; j++)
+		//		for (int j = 0; j < 100; j++)
 		//		{
 		//			await grpcClient.PostLargePayloadAsync(MeteoriteLandingData.GrpcMeteoriteLandingShortList);
 		//		}
-				
+
 		//	}
 		//}
 	}
